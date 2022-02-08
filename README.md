@@ -1,1 +1,1 @@
-# checkout.client
+# checkout.simple
