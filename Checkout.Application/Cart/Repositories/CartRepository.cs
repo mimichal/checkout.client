@@ -1,6 +1,6 @@
-﻿using Checkout.Client.Cart.Models;
+﻿using Checkout.Application.Cart.Models;
 
-namespace Checkout.Client.Cart.Repositories;
+namespace Checkout.Application.Cart.Repositories;
 
 public interface ICartRepository
 {

@@ -1,4 +1,4 @@
-﻿namespace Checkout.Client.Cart.Models
+﻿namespace Checkout.Application.Cart.Models
 {
     public class Product
     {

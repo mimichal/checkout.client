@@ -1,7 +1,7 @@
-﻿using Checkout.Client;
-using Checkout.Client.Cart;
-using Checkout.Client.Cart.Models;
-using Checkout.Client.Cart.Repositories;
+﻿using Checkout.Application;
+using Checkout.Application.Cart;
+using Checkout.Application.Cart.Models;
+using Checkout.Application.Cart.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 // Register services
@@ -10,13 +10,12 @@ var serviceProvider = new ServiceCollection()
     .BuildServiceProvider();
 
 
-// Use CartService
+// Prepare products
+var vase = new Product() { Id = 1, Name = "Vase", BasePrice = 1.2M };
+var bigMug = new Product() { Id = 2, Name = "Big mug", BasePrice = 1M };
+var napkins = new Product() { Id = 3, Name = "Napkins", BasePrice = 0.45M };
 
-
-var vase = new Product() { Id = 1, Name = "Vase", BasePrice = (decimal)1.2 };
-var bigMug = new Product() { Id = 2, Name = "Big mug", BasePrice = (decimal)1 };
-var napkins = new Product() { Id = 3, Name = "Napkins", BasePrice = (decimal)0.45 };
-
+// and discounts
 var discountRepository = serviceProvider.GetService<IDiscountRepository>();
 
 var bigMugDiscount = new Discount() { Id = 1, ProductId = bigMug.Id, RequiredProductCount = 2, TotalPrice = 1.5M };

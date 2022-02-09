@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Checkout.Application\Checkout.Application.csproj" />
     <ProjectReference Include="..\Checkout.Client\Checkout.Client.csproj" />
   </ItemGroup>
 

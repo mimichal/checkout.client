@@ -1,9 +1,9 @@
-﻿using Checkout.Client.Cart;
-using Checkout.Client.Cart.Providers;
-using Checkout.Client.Cart.Repositories;
+﻿using Checkout.Application.Cart;
+using Checkout.Application.Cart.Providers;
+using Checkout.Application.Cart.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Checkout.Client;
+namespace Checkout.Application;
 
 public static class DependencyInjection
 {

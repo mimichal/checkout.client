@@ -1,6 +1,6 @@
-﻿using Checkout.Client.Cart.Repositories;
+﻿using Checkout.Application.Cart.Repositories;
 
-namespace Checkout.Client.Cart.Providers;
+namespace Checkout.Application.Cart.Providers;
 
 public interface ICartTotalPriceProvider
 {

@@ -1,8 +1,8 @@
-﻿using Checkout.Client.Cart.Models;
-using Checkout.Client.Cart.Providers;
-using Checkout.Client.Cart.Repositories;
+﻿using Checkout.Application.Cart.Models;
+using Checkout.Application.Cart.Providers;
+using Checkout.Application.Cart.Repositories;
 
-namespace Checkout.Client.Cart;
+namespace Checkout.Application.Cart;
 
 public interface ICartService
 {
